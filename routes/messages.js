@@ -16,9 +16,14 @@ function messagesApi(app) {
   const messagesService = new MessagesService();
 
   router.get('/', async function (req, res, next) {
+    let { activate } = req.query;
+
+    if (typeof activate === 'string') {
+      activate = (activate === 'true')
+    }
 
     try {
-      const message = await messagesService.getMessages();
+      const message = await messagesService.getMessages({ activate });
 
       res.status(200).json({
         data: message,
@@ -96,10 +101,10 @@ function messagesApi(app) {
     '/:messageId',
     validationHandler({ messageId: messageIdSchema }, 'params'),
     async function (req, res, next) {
-      const { movieId } = req.params;
+      const { messageId } = req.params;
 
       try {
-        const deleteMessageId = await messagesService.deleteMovie({ movieId });
+        const deleteMessageId = await messagesService.deleteMessage({ messageId });
 
         res.status(200).json({
           data: deleteMessageId,

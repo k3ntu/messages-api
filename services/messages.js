@@ -6,8 +6,9 @@ class MessagesService {
     this.mongoDB = new MongoLib();
   }
 
-  async getMessages() {
-    const messages = await this.mongoDB.getAll(this.collection);
+  async getMessages({ activate }) {
+    const query = activate && { activate: activate };
+    const messages = await this.mongoDB.getAll(this.collection, query);
     return messages || [];
   }
 
@@ -24,8 +25,8 @@ class MessagesService {
     return await this.mongoDB.update(this.collection, messageId, message);
   }
 
-  async deleteMovie({ movieId }) {
-    return await this.mongoDB.delete(this.collection, movieId);
+  async deleteMessage({ messageId }) {
+    return await this.mongoDB.delete(this.collection, messageId);
   }
 
   // Challenge 2 - video_23
