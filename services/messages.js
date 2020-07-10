@@ -6,8 +6,8 @@ class MessagesService {
     this.mongoDB = new MongoLib();
   }
 
-  async getMessages({ activate }) {
-    const query = activate && { activate: activate };
+  async getMessages({ active }) {
+    const query = active && { active: active };
     const messages = await this.mongoDB.getAll(this.collection, query);
     return messages || [];
   }
