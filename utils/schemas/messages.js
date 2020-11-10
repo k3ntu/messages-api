@@ -6,7 +6,7 @@ const messageLastNameSchema = Joi.string().max(80);
 const messageEmailSchema = Joi.string().email();
 const messageCodeSchema = Joi.number().integer().default(0);
 const messageDateSchema = Joi.number();
-const messageBodySchema = Joi.string().max(500, 'utf8');
+const messageBodySchema = Joi.string().max(3000, 'utf8');
 const messageTypeSchema = Joi.number().integer().default(0);
 const movieActiveSchema = Joi.boolean().empty('').default(false);
 

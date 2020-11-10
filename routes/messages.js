@@ -16,14 +16,17 @@ function messagesApi(app) {
   const messagesService = new MessagesService();
 
   router.get('/', async function (req, res, next) {
-    let { activate } = req.query;
+    let { active, type } = req.query;
 
-    if (typeof activate === 'string') {
-      activate = (activate === 'true')
+    if (typeof active === 'string') {
+      active = (active === 'true')
+    }
+    if (typeof type === 'string') {
+      type = parseInt(type)
     }
 
     try {
-      const message = await messagesService.getMessages({ activate });
+      const message = await messagesService.getMessages({ active, type });
 
       res.status(200).json({
         data: message,
