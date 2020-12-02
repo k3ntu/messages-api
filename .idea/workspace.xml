@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dc54fe-fc02-477d-a57c-6d1dfaba54da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/newsletters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/newsletters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/schemas/newsletters.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/schemas/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/schemas/messages.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +75,10 @@
       <workItem from="1594426163782" duration="269000" />
       <workItem from="1594679860390" duration="484000" />
       <workItem from="1604983886225" duration="1785000" />
+      <workItem from="1604986502644" duration="10000" />
+      <workItem from="1604986915946" duration="61000" />
+      <workItem from="1604987268666" duration="20000" />
+      <workItem from="1606886963220" duration="716000" />
     </task>
     <servers />
   </component>
@@ -98,6 +95,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-975" y="81" width="583" height="566" key="find.popup" timestamp="1604983923596">
