@@ -180,3 +180,4 @@ $RECYCLE.BIN/
 
 # Jetbrains IDE
 .idea
+.idea/workspace.xml
