@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dc54fe-fc02-477d-a57c-6d1dfaba54da" name="Default Changelist" comment="&quot;Create certificates API. Route 'api/certificates' (#3)">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/certificates.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/certificates.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +86,7 @@
       <workItem from="1604987268666" duration="20000" />
       <workItem from="1606886963220" duration="716000" />
       <workItem from="1606924055685" duration="7535000" />
+      <workItem from="1606937269211" duration="771000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Create certificates API. Route 'api/certificates' (#3)">
       <created>1606936773489</created>
