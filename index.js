@@ -5,6 +5,7 @@ const app = express();
 const { config } = require('./config');
 const messagesApi = require('./routes/messages');
 const newslettersApi = require('./routes/newsletters');
+const certificatesApi = require('./routes/certificates');
 
 const {
   logErrors,
@@ -22,6 +23,7 @@ app.use(cors());
 
 messagesApi(app);
 newslettersApi(app);
+certificatesApi(app);
 
 // Catch 404
 app.use(notFoundHandler);
