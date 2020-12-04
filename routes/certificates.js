@@ -16,10 +16,10 @@ function certificatesApi(app) {
   const certificatesService = new CertificatesService();
 
   router.get('/', async function (req, res, next) {
-    let { dni } = req.query;
+    let { data } = req.query;
 
     try {
-      const message = await certificatesService.getCertificates({ dni });
+      const message = await certificatesService.getCertificates({ data });
 
       res.status(200).json({
         data: message,

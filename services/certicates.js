@@ -6,8 +6,8 @@ class CertificatesService {
     this.mongoDB = new MongoLib();
   }
 
-  async getCertificates({ dni = '' }) {
-    const query = dni && { dni: dni };
+  async getCertificates({ data = '' }) {
+    const query = data && { $or:[{dni: data}, { email: data }] };
     const certificates = await this.mongoDB.getAll(this.collection, query);
     return certificates || [];
   }

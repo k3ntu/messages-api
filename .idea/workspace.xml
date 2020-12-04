@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dc54fe-fc02-477d-a57c-6d1dfaba54da" name="Default Changelist" comment="&quot;Create certificates API. Route 'api/certificates' (#3)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/certificates.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/certificates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/certicates.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/certicates.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
